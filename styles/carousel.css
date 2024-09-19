@@ -1,0 +1,50 @@
+/* Custom sliding animation */
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Adjust timing */
+  }
+  
+  /* Fade effect (optional) */
+  .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  .carousel-item.active {
+    opacity: 1;
+  }
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 100;
+  }
+  
+  /* Example with scaling or other animations */
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    transition: transform 0.8s ease-in-out; /* Smooth sliding */
+  }
+  
+  /* Keyframes for a custom bounce animation */
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Applying the keyframe animation to carousel items */
+  .carousel-item {
+    animation: bounceIn 1s ease-in-out; /* Change this to your preferred animation */
+  }

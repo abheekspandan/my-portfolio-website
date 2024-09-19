@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="assets/js/color-modes.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
+    
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    
+    <link href="styles/heroes.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fba2771769.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles\styles.css">
+    <link rel="stylesheet" href="styles\master.css">
+    <link rel="stylesheet" href="styles\carousel.css">
+    <link rel="stylesheet" href="styles\skills.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
+</head>
+<body>
+
+    <nav class="noc">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+          <i class="fa-solid fa-times" id="close-icon"></i>
+        </label>
+        <label class="logo">Kraidenprinz</label>
+        <ul id="nochange">
+            <li><a href="#section" class="active" onclick="closeSidebar()">Home</a></li>
+            <li><a href="#aboutme" onclick="closeSidebar()">About Me</a></li>
+            <li><a href="#qualifications" onclick="closeSidebar()">Qualifications</a></li>
+            <li><a href="#skills" onclick="closeSidebar()">Skills</a></li>
+            <li><a href="#internships" onclick="closeSidebar()">Internships</a></li>
+            <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
+            <li><a href="#contact" onclick="closeSidebar()">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+        <div class="section1">
+        <img src="assets\section3.jpg" id="section">
+        <div class="wrapper">
+           <div class="innersection1">Hi , I'm</div>
+           <div class="multiText">Abheek Spandan</div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check2" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </symbol>
+      </svg>
+  
+      
+  <main>
+    <div class="bg-dark text-secondary px-4 py-5 text-center" id="aboutme">
+      <img class="d-block mx-auto mb-4" src="assets/brand/me2-modified.png" alt="" width="200" height="200">
+      <h1 class="display-5 fw-bold text-white">About Me</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Hi there I'm pursuing undergraduate course from Indian Institute of Information Technology, Kota . I am very passionate about developing new things and learn new skills out there in the market.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="assets/Resume-Abheek spandan.pdf" download target="_blank"><button type="button" class="btn btn-primary btn-lg px-4 gap-3" data-toggle="button">Download CV</button></a>
+          <a  href="#"><button class="btn btn-outline-secondary btn-lg px-4 gap-3">My Achievements</button></a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- <div class="container col-xxl-8 px-4 g-5" id="qualifications">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="heroes\bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+    
+  </main>
+<hr id="qualifications">
+<main>
+  <br>
+  <h1 id="centreconfig"><u>Educational Qualifications</u></h1>
+
+  <!-- Qualification Card 1 -->
+  <div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="assets\institute_logo\Rp_logo-removebg-preview.png" class="img-fluid rounded-start" alt="Degree Image">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">High School Education</h5>
+                <p class="card-text"><strong>Institution:</strong> RP Public School</p>
+                <p class="card-text"><strong>Year of Completion:</strong> 2018</p>
+                <p class="card-text"><strong>Percentage:</strong> 91.4%</p>
+                <a href="assets\institute_logo\xth marksheet.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Qualification Card 2 -->
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="assets\institute_logo\image.png" class="rounded mx-auto d-block" alt="Degree Image" id="dav">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Senior Secondary Education</h5>
+                <p class="card-text"><strong>Institution:</strong> DAV Public School</p>
+                <p class="card-text"><strong>Year of Completion:</strong> 2020</p>
+                <p class="card-text"><strong>Percentage:</strong> 93.8%</p>
+                <a href="assets\institute_logo\XII-marksheet-compressed.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Qualification Card 3 -->
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="assets\institute_logo\iiitk.png" class="img-fluid rounded-start" alt="Degree Image" id="iiit">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">B.Tech in Computer Science</h5>
+                <p class="card-text"><strong>Institution:</strong> Indian Institute of Information Technology, Kota</p>
+                <p class="card-text"><strong>Year of Completion:</strong> 2025</p>
+                <p class="card-text"><strong>CGPA:</strong> 7.28(current)</p>
+                <!-- <a href="path_to_certificate.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</main>
+
+<!-- skills section -->
+<section id="skills" class="skills-section"><br><br>
+  <h2 id="centreconfig">My Skills</h2><br><br>
+  <div class="skills-container">
+    <!-- Skill Card Example -->
+    <div class="skill-card" style="--progress-width: 85%;">
+      <h3>C++</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Very Good</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 75%;">
+      <h3>HTML</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Good</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 75%;">
+      <h3>CSS</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Good</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 75%;">
+      <h3>JavaScript</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Good</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 85%;">
+      <h3>MySql</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Very Good</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 50%;">
+      <h3>Linux</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Intermediate</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 50%;">
+      <h3>Machine Learning</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Intermediate</p>
+    </div>
+    <div class="skill-card" style="--progress-width: 20%;">
+      <h3>Java</h3>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="proficiency">Beginner</p>
+    </div>
+  </div>
+</section>
+
+<!--certification section--><br><br><hr>
+<br><br><br><br>
+<section>
+  <h1 id="centreconfig" class="text-center">Certifications</h1><br><br>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="dark">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <!-- First Certificate -->
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img w-100" height="600" src="assets/Teachnook COURSE Completion Certificate _ Abheek Spandan (1)_page-0001.jpg">
+        <div class="container">
+          
+        </div>
+      </div>
+
+      <!-- Second Certificate -->
+      <div class="carousel-item">
+        <img class="bd-placeholder-img w-100" height="600" src="assets/Teachnook COURSE Completion Certificate _ Abheek Spandan_page-0001.jpg">
+        <div class="container">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<br>
+<h1 id="centreconfig">Extra Curriculars</h1>
+<hr class="featurette-divider">
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/hypergraph2.png"><title>Hypergraphs</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></i>
+      <h2 class="fw-normal">Research</h2>
+      <p>Worked on the topic of Hypergraphs under Professor Dr. Ankit Sharma</p>
+      <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/ps_png.png"><title>Paryavaran Shakti Club</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+      <h2 class="fw-normal">Paryavaran Shakti</h2>
+      <p>Assistant Secretary at Paryavaran Shakti Club, main incharge for planning and execution of events.</p>
+      <p><a class="btn btn-secondary" href="https://instagram.com/paryavaranshakti_iiitkota?igshid=MzRlODBiNWFlZA==" target="blank">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/codechef.jpeg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+      <h2 class="fw-normal">Codechef</h2>
+      <p>Current ranking of 1400 since July 2022.Global Rank of 63000. Country Rank of 58000</p>
+      <p><a class="btn btn-secondary" href="https://www.codechef.com/users/abheekspandan" target="blank">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+<!-- Internship Section -->
+<hr>
+<main id="internships">
+  <br><br><br>
+<h1 id="centreconfig" style="color: black;"> Internships</h1>
+<section id="internship" class="internship-section" style="background-image: url('assets/backgrounds/internship-bg.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+      <div2 style="color: white;">Internship Experience</div2>
+
+      <!-- Internship 1 -->
+      <div class="internship-card">
+          <div class="logo">
+            <img src="assets/institute_logo/BELlogo.png" alt="ABC Tech Logo" width="100">
+          </div>
+          <div class="internship-details">
+              <h4>Software Development Intern at ABC Tech</h4>
+              <h5>June 2023 - August 2023</h5>
+              <p><span>Key Responsibilities:</span> Worked on SNMP Client and Agent for ATC system using JAVA for Linux based platforms.</p>
+              <p><span>Key Achievements:</span> Successfully tested the programs by running in the servers.</p>
+          </div>
+      </div>
+
+      <!-- Internship 2
+      <div class="internship-card">
+          <div class="logo">
+            <img src="assets/logos/xyz-analytics-logo.png" alt="XYZ Analytics Logo" width="50">
+          </div>
+          <div class="internship-details">
+              <h4>Data Analyst Intern at XYZ Analytics</h4>
+              <h5>January 2023 - April 2023</h5>
+              <p><span>Key Responsibilities:</span> Analyzed large datasets using Python and SQL. Built data visualization dashboards using Power BI to help clients make data-driven decisions.</p>
+              <p><span>Key Achievements:</span> Developed a report that increased data processing efficiency by 30%. Automated repetitive tasks, reducing manual work by 40%.</p>
+          </div>
+      </div> -->
+
+      <!-- Add More Internships as Needed -->
+  </div>
+</section>
+</main>
+
+
+  <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider" id="projects"><br><br>
+  <h1 id="centreconfig">My Projects</h1>
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">A.L.I.C.E <span class="text-body-secondary">an AI Chatbot</span></h2>
+      <p class="lead">Made a desktop voice Assistant "Alice" using HTML,CSS,Javascript,Python and mySQL.</p>
+      <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://github.com/abheekspandan/A.L.I.C.E'">View Project</button>
+    </div>
+    <div class="col-md-5">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/Projectimg/AI.jpg"><title>Alice</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2" id="new">
+      <h2 class="featurette-heading fw-normal lh-1">Student DBMS <span class="text-body-secondary"></span></h2>
+      <p class="lead">Made a Student Database Management System in Python which allows users to perform CRUD operations on student's enteries and store them.</p>
+      <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://github.com/abheekspandan/resume/tree/main/assignment'">View Project</button>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/Projectimg/database.png"><title>Student Database Management system</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text></img>
+    </div>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Zomato <span class="text-body-secondary"> Resturant Finder</span></h2>
+      <p class="lead">Made a full stack website using mysql,React,Express,Node.js where user can find all the details of the resturants served under zomato all around the world.</p>
+      <button type="button" class="btn btn-outline-secondary" onclick="document.location='https://github.com/e42-typeface-ai/iiit-kota-assign-abheekspandan'">View Project</button>
+    </div>
+    <div class="col-md-5 order-md-2 align-right text-end pt-3 pt-md-5">
+      <img 
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+          width="400" 
+          height="400" 
+          src="assets/Projectimg/Zomato_Logo.jpg" 
+          alt="Zomato Image" 
+          role="img" 
+          aria-label="Zomato Image"
+      >
+  </div>
+  
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <!-- /END THE FEATURETTES -->
+  
+</div><!-- /.container -->
+
+</main>
+
+<!--CONTACT ME SECTION-->
+<section class="contact" id="contact">
+  <div class="content">
+    <h2>Contact Me</h2>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quidem? Nisi explicabo debitis reiciendis dolor vitae quia accusamus nesciunt sunt.</p> -->
+  </div>
+  <div class="contain">
+    <div class="contactInfo">
+      <div class="box">
+        <div class="icon">
+          <!-- Link to Google Maps with your location -->
+          <a href="https://www.google.com/maps?q=D-10+BEL+Colony,+Kotdwara,+Pauri+Garhwal,+246149" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+          </a>
+        </div>
+        <div class="text">
+          <h3>Address</h3>
+          <p>D-10 BEL Colony<br>
+             Kotdwara, Pauri Garhwal<br>
+            246149</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <!-- Link to dial your phone number -->
+          <a href="tel:+916397514762">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+        <div class="text">
+          <h3>Phone</h3>
+          <p>+91 6397514762</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icon">
+        <!-- Link to send an email -->
+        <a href="mailto:2021kucp1005@iiitkota.ac.in" aria-label="Send email to 2021kucp1005@iiitkota.ac.in">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <div class="text">
+        <h3>Email</h3>
+        <p>2021kucp1005@iiitkota.ac.in</p>
+    </div>
+  </div>
+  </div>
+
+  <!--Form SECTION-->
+
+  <div class="contactForm">
+    <form name="frmQuery" method="post" action="submit_form.php" id="submit">
+      <h2>Send Message</h2>
+      <div class="inputBox">
+          <input type="text" name="name" required="required" id='name'>
+          <span>Enter your Full Name</span>
+      </div>
+      <div class="inputBox">
+          <input type="email" name="email" required="required" id='email'>
+          <span>Enter your Email</span>
+      </div>
+      <div class="inputBox">
+          <textarea required="required" name="message" id='message'></textarea>
+          <span>Enter your Message...</span>
+      </div>
+      <div class="inputBox">
+          <input type="submit" name="Submit" value="Send" id="Submit">
+      </div>
+  </form>
+  </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<div class="container" data-bs-theme="dark" id="container">
+  <footer class="py-5" id="x">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 style="font-weight: bold; color:aliceblue">Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#section" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#aboutme" class="nav-link p-0 text-body-secondary">Aboutme</a></li>
+          <li class="nav-item mb-2"><a href="#qualifications" class="nav-link p-0 text-body-secondary">Qualifications</a></li>
+          <li class="nav-item mb-2"><a href="#projects" class="nav-link p-0 text-body-secondary">Projects</a></li>
+          <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact me</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 style="color:aliceblue">Subscribe to our newsletter</h5>
+          <p class="nav-link p-0 text-body-secondary">Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Adjust alignment of text and icons in the footer -->
+    <div class="d-flex justify-content-between align-items-center py-4 my-4 border-top" id="mb">
+      <p class="mb-0" style="color:aliceblue">&copy; Abheek Spandan, All rights reserved.</p>
+      <ul class="list-unstyled d-flex mb-0">
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="https://www.instagram.com/abheek_2002" target="_blank">
+            <i class="fab fa-instagram" style="color: white; font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="https://github.com/abheekspandan" target="_blank">
+            <i class="fab fa-github" style="color: white; font-size: 24px;"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="link-body-emphasis" href="https://www.linkedin.com/in/abheek-spandan-a40168226" target="_blank">
+            <i class="fab fa-linkedin" style="color: white; font-size: 24px;"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<!-- Include FontAwesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  var typingEffect=new Typed(".multiText",{
+      strings : ["","Web developer","Data Analyst","Otaku Fan"],
+      loop : true,
+      typeSpeed :100,
+      backSpeed :150,
+      startDelay :100,
+      backDelay : 150
+});
+
+    // Function to uncheck the checkbox and close the sidebar
+    function closeSidebar() {
+        document.getElementById('check').checked = false;
+    }
+
+
+    //for skills section
+    document.addEventListener('DOMContentLoaded', function() {
+    const skillCards = document.querySelectorAll('.skill-card');
+    
+    skillCards.forEach(card => {
+      const progressFill = card.querySelector('.progress-fill');
+      const width = progressFill.style.width;
+
+      // Set the CSS variable with the width value
+      progressFill.style.setProperty('--progress-width', width);
+    });
+  });
+
+  const carousel = document.querySelector('#myCarousel');
+    const items = carousel.querySelectorAll('.carousel-item');
+
+    carousel.addEventListener('slid.bs.carousel', function (e) {
+      const currentItem = e.relatedTarget;
+
+      // Remove animation classes from all items
+      items.forEach(item => {
+        item.classList.remove('animate__animated', 'animate__fadeIn');
+      });
+
+      // Apply animation to the current item
+      currentItem.classList.add('animate__animated', 'animate__fadeIn');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.skills-section {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc; /* Added border to show boundaries */
+}
+
+.progress-fill {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0; /* Start at 0% width */
+    transition: width 1s; /* Smooth animation */
+}
+
+/* When hovering over the skill-card, animate the progress bar */
+.skill-card:hover .progress-fill {
+    width: var(--progress-width); /* Use a CSS variable for the width */
+}
+
+/* Add animation for the proficiency text */
+.proficiency {
+    opacity: 0; /* Start with hidden text */
+    transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+    transform: translateY(10px); /* Start slightly below */
+}
+
+/* Show proficiency text on hover */
+.skill-card:hover .proficiency {
+    opacity: 1; /* Make text visible */
+    transform: translateY(0); /* Move text to its original position */
+}
+
+/* Keyframes for progress bar fill animation */
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width); /* Uses CSS variable for dynamic width */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+}

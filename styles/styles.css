@@ -1,0 +1,524 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-blend-mode: darken;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+body,html{
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+label.logo {
+  font-family: sans-serif;
+  line-height: 80px;
+  color: white;
+  font-size: 30px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+.noc {
+  text-decoration: none;
+  position: fixed;
+}
+
+nav {
+  background: #001C30;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: #526D82;
+  padding: 30px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a.active, a:hover {
+  transition: 0.5s;
+  color: aliceblue;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 11;
+  position: relative;
+}
+
+#menu-icon, #close-icon {
+  transition: transform 0.5s ease;
+}
+
+#close-icon {
+  display: none; /* Initially hidden */
+}
+
+/* When the checkbox is checked, show the close icon and hide the hamburger icon */
+#check:checked ~ .checkbtn #menu-icon {
+  display: none;
+}
+
+#check:checked ~ .checkbtn #close-icon {
+  display: inline-block;
+}
+
+/* Hide the checkbox input */
+#check {
+  display: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 952px) {
+  label.logo {
+      font-family: sans-serif;
+      font-size: 25px;
+      padding-left: 50px;
+  }
+
+  nav ul li a {
+      font-size: 16px;
+      text-decoration: none;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+      display: inline-block;
+  }
+  
+  #nochange {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      right: -120%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 11;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+
+  nav ul li a {
+      font-size: 20px;
+      text-decoration: none;
+  }
+
+  a:hover, a.active {
+      background: none;
+      color: #0082e6;
+  }
+
+  /* Menu slide-in effect */
+  #check:checked ~ ul {
+      right: -20px;
+  }
+}
+
+
+.section1{
+    position: relative;
+    top: -16px;
+    z-index: 0;
+}
+
+#section{
+    background: no-repeat linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,1));
+    width: 100%;
+    background-size: cover;
+    height: 2500%;
+    opacity: 1;
+    display:block;
+    background-color: rgba(0,0,0,0.55);
+    position:absolute;
+    margin-top: 1rem;
+}
+
+.wrapper{
+    color: rgb(255, 0, 0);
+    width:100%;
+    
+    z-index: 2;
+}
+
+.innersection1{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: none;
+    font-size: 250%;
+    position: absolute;
+    top: 200px;
+    left:45%;
+    
+}
+
+.typed-cursor{
+    display: hidden;
+    z-index: -1;
+    margin:10px 10px;
+}
+
+.multiText{
+    list-style: none;
+    color: rgb(15, 128, 227);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bolder;   
+    font-size: 250%;
+    position: absolute;
+    top: 325px;
+    left:38%;
+    border-right: 2px solid rgb(15, 128, 227);
+}
+
+/*from here only about us section*/
+
+#aboutme{
+    margin-top: 37rem;
+    margin-bottom:1rem;
+    min-height: 45rem;
+    max-height: 70rem;
+    background: black;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: 3.0rem;
+    font-weight: 600;
+}
+
+.bg-dark{
+   
+}
+
+#change{
+    max-width: fit-content ;
+}
+
+.py-5{
+    padding-top: 5rem!important;
+    padding-bottom: 1rem!important;
+}
+
+#change{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+main{
+    top:-16px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif; 
+
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    opacity: 0.8;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  /* Carausel from here for achievements and projects */
+
+  .carousel-caption .text-end{
+    z-index: -10;
+  }
+  .carousel-item{
+    z-index: -10;
+  }
+
+  #opac{
+    opacity:0.7;
+    background: rgba(0,0,0,0.55);
+  }
+
+  .text-end{ 
+    text-align: center!important;  /*by default it is set to right align I am changing it to center*/
+  }
+
+  .text-start {
+    text-align: center!important;   /*by default it is set to left I am changing it to center*/
+  }
+
+  #centreconfig{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* Contact section */
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('assets/marketing/Smart-Buildings-1-1024x683.jpg');
+  background-size: cover;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contain .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contain .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contain .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #00bcd4;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center icon vertically */
+  border-radius: 50%;
+  font-size: 22px;
+  margin-right: 20px; /* Space between icon and text */
+}
+
+.contain .contactInfo .box .text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.contain .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #00bcd4;
+  border-radius: 10px;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border: 2px solid #333;
+  border-radius: 10px;
+  outline: none;
+  max-height: 10rem;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 6px 0;
+  padding-left: 5px;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #000;
+  font-size: 12px;
+  transform: translateY(-25px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #0c4c56;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact {
+      padding: 50px;
+  }
+  .contain {
+      flex-direction: column;
+  }
+  .contain .contactInfo {
+      margin-bottom: 40px;
+  }
+  .contain .contactInfo,
+  .contactForm {
+      width: 100%;
+  }
+}
+
+ /*Footer*/
+
+#x{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    padding-top: 1rem!important;
+    padding-bottom: 0px!important;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+
+#container{
+    background: rgba(0,0,0,1);
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    margin-bottom: 0px!important;
+    max-width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#mb{
+    margin-bottom: 0rem!important;
+}
+
+
+/*others*/
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+    line-height: 5;
+}

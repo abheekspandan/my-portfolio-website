@@ -1,0 +1,75 @@
+body{
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#iiit{
+    height:55%;
+    width:55%;
+    margin-top: 7.50%;
+    margin-left: 25%;
+}
+
+#dav{
+    margin-top: 5%;
+}
+
+ /* Style for the internship section */
+.internship-section {
+     /* padding: -60px 0;  */
+     margin-top: 0;
+    color: white;
+}
+
+.internship-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Make the background slightly transparent */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.internship-card .logo {
+    margin-right: 20px;
+}
+
+.internship-card h4,
+.internship-card h5 {
+    margin: 0;
+    color: #f1f1f1;
+}
+
+.internship-card p {
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+
+.internship-card span {
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .internship-card h4 {
+        font-size: 20px;
+    }
+
+    .internship-card h5 {
+        font-size: 16px;
+    }
+}
