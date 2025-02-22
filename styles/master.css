@@ -15,11 +15,29 @@ body{
 }
 
 #iiit{
-    height:70%;
-    width:42%;
+    
+}
+#iiit {
+    width: 60%;  /* Default size */
+    margin-left: 0;  /* Default no margin */
+}
+
+@media (min-width: 768px) {
+    #iiit {
+        width: 50%;  /* Medium screens */
+        margin-left: 25%; /* Apply margin */
+    }
+}
+
+@media (min-width: 992px) {
+    #iiit {
+        width: 40%;  /* Large screens */
+        height:70%;
     margin-top: 7.50%;
     margin-left: 25%;
+    }
 }
+
 
 #dav{
     margin-top: 5%;
