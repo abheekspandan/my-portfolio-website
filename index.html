@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles\form.css">
     <link rel="stylesheet" href="styles\carousel.css">
     <link rel="stylesheet" href="styles\skills.css">
+    <link rel="stylesheet" href="styles\projects.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -107,21 +108,21 @@
 <hr id="qualifications">
 <main>
   <br>
-  <h1 id="centreconfig"><u>Educational Qualifications</u></h1>
+  <h1 id="centreconfig" class="text-center"><u>Educational Qualifications</u></h1>
 
-  <!-- Qualification Card 1 -->
-  <div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <img src="assets\institute_logo\Rp_logo-removebg-preview.png" class="img-fluid rounded-start" alt="Degree Image">
+<!-- Qualification Card 1 -->
+<div class="card mb-3">
+    <div class="row g-0 align-items-center text-md-start text-center">
+        <div class="col-md-4 col-12">
+            <img src="assets/institute_logo/Rp_logo-removebg-preview.png" class="img-fluid rounded-start" alt="Degree Image">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-12">
             <div class="card-body">
                 <h5 class="card-title">High School Education</h5>
                 <p class="card-text"><strong>Institution:</strong> RP Public School</p>
                 <p class="card-text"><strong>Year of Completion:</strong> 2018</p>
                 <p class="card-text"><strong>Percentage:</strong> 91.4%</p>
-                <a href="assets\institute_logo\xth marksheet.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
+                <a href="assets/institute_logo/xth marksheet.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
             </div>
         </div>
     </div>
@@ -129,17 +130,17 @@
 
 <!-- Qualification Card 2 -->
 <div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <img src="assets\institute_logo\image.png" class="rounded mx-auto d-block" alt="Degree Image" id="dav">
+    <div class="row g-0 align-items-center text-md-start text-center">
+        <div class="col-md-4 col-12">
+            <img src="assets/institute_logo/image.png" class="img-fluid rounded mx-auto d-block" alt="Degree Image" id="dav">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-12">
             <div class="card-body">
                 <h5 class="card-title">Senior Secondary Education</h5>
                 <p class="card-text"><strong>Institution:</strong> DAV Public School</p>
                 <p class="card-text"><strong>Year of Completion:</strong> 2020</p>
                 <p class="card-text"><strong>Percentage:</strong> 93.8%</p>
-                <a href="assets\institute_logo\XII-marksheet-compressed.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
+                <a href="assets/institute_logo/XII-marksheet-compressed.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a>
             </div>
         </div>
     </div>
@@ -147,17 +148,19 @@
 
 <!-- Qualification Card 3 -->
 <div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-md-4">
-            <img src="assets\institute_logo\iiitk.png" class="img-fluid rounded-start" alt="Degree Image" id="iiit">
-        </div>
-        <div class="col-md-8">
+    <div class="row g-0 align-items-center text-md-start text-center">
+        <div class="col-md-4 col-12">
+          <img src="assets/institute_logo/iiitk.png" 
+          class="img-fluid rounded mx-auto d-block w-50 mb-3 mt-3" 
+          alt="Degree Image" id="iiit">
+     
+             </div>
+        <div class="col-md-8 col-12">
             <div class="card-body">
                 <h5 class="card-title">B.Tech in Computer Science</h5>
                 <p class="card-text"><strong>Institution:</strong> Indian Institute of Information Technology, Kota</p>
                 <p class="card-text"><strong>Year of Completion:</strong> 2025</p>
-                <p class="card-text"><strong>CGPA:</strong> 7.28(current)</p>
-                <!-- <a href="path_to_certificate.pdf" class="btn btn-outline-primary btn-lg px-4 me-md-2" target="_blank">Download Certificate</a> -->
+                <p class="card-text"><strong>CGPA:</strong> 7.28 (current)</p>
             </div>
         </div>
     </div>
@@ -291,33 +294,35 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 <br><br><br><br>
-<h1 id="centreconfig">Extra Curriculars</h1>
+<h1 id="centreconfig" class="text-center">Extra Curriculars</h1>
 <br><br>
 <hr class="featurette-divider">
 <br><br>
 <div class="container marketing">
-
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/hypergraph2.png"><title>Hypergraphs</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></i>
+  <div class="row text-center align-items-center">
+    <div class="col-lg-4 d-flex flex-column align-items-center">
+      <img class="rounded-circle mb-3" width="140" height="140" src="assets/marketing/hypergraph2.png" alt="Hypergraphs">
       <h2 class="fw-normal">Research</h2>
       <p>Worked on the topic of Hypergraphs under Professor Dr. Ankit Sharma</p>
-      <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/ps_png.png"><title>Paryavaran Shakti Club</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+    </div>
+
+    <div class="col-lg-4 d-flex flex-column align-items-center">
+      <img class="rounded-circle mb-3" width="140" height="140" src="assets/marketing/ps_png.png" alt="Paryavaran Shakti Club">
       <h2 class="fw-normal">Paryavaran Shakti</h2>
-      <p>Assistant Secretary at Paryavaran Shakti Club, main incharge for planning and execution of events.</p>
-      <p><a class="btn btn-secondary" href="https://instagram.com/paryavaranshakti_iiitkota?igshid=MzRlODBiNWFlZA==" target="blank">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/marketing/codechef.jpeg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></img>
+      <p>Assistant Secretary at Paryavaran Shakti Club, main in charge of planning and execution of events.</p>
+      <p><a class="btn btn-secondary" href="https://instagram.com/paryavaranshakti_iiitkota?igshid=MzRlODBiNWFlZA==" target="_blank">View details &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-4 d-flex flex-column align-items-center">
+      <img class="rounded-circle mb-3" width="140" height="140" src="assets/marketing/codechef.jpeg" alt="Codechef">
       <h2 class="fw-normal">Codechef</h2>
-      <p>Current ranking of 1400 since July 2022.Global Rank of 63000. Country Rank of 58000</p>
-      <p><a class="btn btn-secondary" href="https://www.codechef.com/users/abheekspandan" target="blank">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
+      <p>Current ranking of 1400 since July 2022. Global Rank of 63,000. Country Rank of 58,000.</p>
+      <p><a class="btn btn-secondary" href="https://www.codechef.com/users/abheekspandan" target="_blank">View details &raquo;</a></p>
+    </div>
+  </div>
+</div>
+
+
   <br><br>
 <!-- Internship Section -->
 <hr>
@@ -362,64 +367,66 @@
   <!-- Project Section -->
 <br><br>
 <hr class="featurette-divider" id="projects"><br><br>
+<hr class="featurette-divider" id="projects"><br><br>
 <h1 class="text-center fw-bold display-4">🚀 My Projects</h1>
 <hr class="featurette-divider">
 
 <!-- A.L.I.C.E Chatbot -->
 <div class="row featurette align-items-center">
-  <div class="col-md-7">
-    <h2 class="text-center featurette-heading fw-bold text-dark">A.L.I.C.E <span class="text-info">AI Chatbot</span></h2>
-    <p class="lead text-muted">
+  <div class="col-lg-7 col-md-12 text-center">
+    <h2 class="featurette-heading fw-bold text-dark">A.L.I.C.E <span class="text-info">AI Chatbot</span></h2>
+    <p class="lead text-muted mx-auto" style="max-width: 600px;">
       Developed a <b>desktop voice assistant</b> using <b>HTML, CSS, JavaScript, Python, and MySQL</b>.
     </p>
     <div class="d-flex justify-content-center">
-    <button class="text-center btn btn-dark btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/abheekspandan/A.L.I.C.E', '_blank')">
-      🤖 View Project
-    </button>
+      <button class="btn btn-dark btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/abheekspandan/A.L.I.C.E', '_blank')">
+        🤖 View Project
+      </button>
     </div>
   </div>
-  <div class="col-md-5 text-center">
-    <img class="img-fluid rounded shadow-lg" width="400" height="400" src="assets/Projectimg/AI.jpg" alt="AI Chatbot">
+  <div class="col-lg-5 col-md-12 text-center">
+    <img class="img-fluid rounded shadow-lg project-img" src="assets/Projectimg/AI.jpg" alt="AI Chatbot">
   </div>
 </div>
+
 
 <hr class="featurette-divider my-5">
 
 <!-- Student DBMS -->
 <div class="row featurette align-items-center">
-  <div class="col-md-7 order-md-2">
+  <div class="col-lg-7 col-md-12 order-lg-2">
     <h2 class="text-center featurette-heading fw-bold text-dark">Student DBMS</h2>
     <p class="lead text-muted">
       Built a <b>Student Database Management System</b> in Python to perform <b>CRUD operations</b> efficiently.
     </p>
     <div class="d-flex justify-content-center">
-    <button class="btn btn-primary btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/abheekspandan/resume/tree/main/assignment', '_blank')">
-      📂 View Project
-    </button>
+      <button class="btn btn-primary btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/abheekspandan/resume/tree/main/assignment', '_blank')">
+        📂 View Project
+      </button>
     </div>
   </div>
-  <div class="col-md-5 order-md-1 text-center">
-    <img class="img-fluid rounded shadow-lg" width="400" height="400" src="assets/Projectimg/database.png" alt="Student DBMS">
+  <div class="col-lg-5 col-md-12 order-lg-1 text-center">
+    <img class="img-fluid rounded shadow-lg project-img" src="assets/Projectimg/database.png" alt="Student DBMS">
   </div>
 </div>
 
 <hr class="featurette-divider my-5">
 
 <!-- Zomato Finder -->
-<div class="row featurette align-items-center">
-  <div class="col-md-7">
+<div class="row featurette align-items-center mr-3">
+  <div class="col-lg-7 col-md-12">
     <h2 class="text-center featurette-heading fw-bold text-danger">Zomato <span class="text-warning">Restaurant Finder</span></h2>
-    <p class="lead text-muted">
+    <p class="lead text-muted mx-auto" style="max-width: 600px;">
       Created a <b>full-stack platform</b> using <b>MySQL, React, Express, and Node.js</b> to explore global restaurant data.
     </p>
     <div class="d-flex justify-content-center">
-    <button class="btn btn-danger btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/e42-typeface-ai/iiit-kota-assign-abheekspandan', '_blank')">
-      🍽️ View Project
-    </button>
+      <button class="btn btn-danger btn-lg mt-2 shadow-lg" onclick="window.open('https://github.com/e42-typeface-ai/iiit-kota-assign-abheekspandan', '_blank')">
+        🍽️ View Project
+      </button>
     </div>
   </div>
-  <div class="col-md-5 text-center">
-    <img class="img-fluid rounded shadow-lg" width="400" height="400" src="assets/Projectimg/Zomato_Logo.jpg" alt="Zomato Finder">
+  <div class="col-lg-5 col-md-12 text-center">
+    <img class="img-fluid rounded shadow-lg project-img mr-3" src="assets/Projectimg/Zomato_Logo.jpg" alt="Zomato Finder">
   </div>
 </div>
 
@@ -427,7 +434,7 @@
 
 <!-- Dog API Fetcher -->
 <div class="row featurette align-items-center">
-  <div class="col-md-7 order-md-2">
+  <div class="col-lg-7 col-md-12 order-lg-2">
     <h2 class="text-center featurette-heading fw-bold text-dark">🐶 Dog API Fetcher</h2>
     <p class="lead text-muted">
       Developed a <b>React-based API Fetcher</b> to display random dog images from an API.
@@ -441,31 +448,35 @@
       </button>
     </div>
   </div>
-  <div class="col-md-5 text-center">
-    <img class="img-fluid rounded shadow-lg" width="400" height="400" src="assets/Projectimg/dog.jpg" alt="Dog API">
+  <div class="col-lg-5 col-md-12 text-center">
+    <img class="img-fluid rounded shadow-lg project-img" src="assets/Projectimg/dog.jpg" alt="Dog API">
   </div>
 </div>
-
 
 <hr class="featurette-divider my-5">
 
 <!-- Community Issue Platform -->
 <div class="row featurette align-items-center">
-  <div class="col-md-7">
-    <h2 class="featurette-heading fw-bold text-danger"> <span class="text-warning">Community Issues Platform</span></h2>
-    <p class="lead text-muted">
+  <div class="col-lg-7 col-md-12 text-center text-lg-start mx-auto">
+    <h2 class="text-center featurette-heading fw-bold text-danger"><span class="text-warning">Community Issues Platform</span></h2>
+    <p class="lead text-muted mx-auto" style="max-width: 600px;">
       Developed a <b>voting-based platform</b> where users can post, upvote, and resolve <b>community issues</b>.
     </p>
-    <div class="d-flex justify-content-center px-4">
-    <button class="btn btn-warning btn-lg mt-2 shadow-lg">
-      🌍 Coming Soon ... 
-    </button>
+    <div class="d-flex justify-content-center gap-3 px-4">
+      <button class="btn btn-warning btn-lg shadow-lg" onclick="window.open('https://community-issues-platform.vercel.app/')">
+        🌍 Live Demo
+      </button>
+      <button class="btn btn-info btn-lg shadow-lg" onclick="window.open('https://github.com/abheekspandan/community_issues_platform', '_blank')">
+       📂 View Code
+      </button>
     </div>
   </div>
-  <div class="col-md-5 text-center">
-    <img class="img-fluid rounded shadow-lg" width="400" height="400" src="assets/Projectimg/52399.jpg" alt="Community Platform">
+  <div class="col-lg-5 col-md-12 text-center mt-3 mt-lg-0">
+    <img class="img-fluid rounded shadow-lg project-img" src="assets/Projectimg/52399.jpg" alt="Community Platform">
   </div>
 </div>
+
+
 
 <hr class="featurette-divider">
 

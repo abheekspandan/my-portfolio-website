@@ -1,0 +1,29 @@
+.project-img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+  }
+  @media (min-width: 992px) {  /* For large screens */
+    .featurette img.img-fluid {
+        max-width: 300px; /* Adjust this value as needed */
+        height: auto;
+    }
+}
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .featurette {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .col-lg-7, .col-lg-5 {
+      width: 100%;
+      order: initial;
+    }
+  
+    .project-img {
+      max-width: 300px; 
+      margin: 20px auto;
+    }
+  }
+  
