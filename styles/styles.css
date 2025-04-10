@@ -30,6 +30,10 @@ label.logo {
   padding: 0 50px;
   font-weight: bold;
 }
+#list-unstyled{
+  list-style-type: disc;
+}
+
 
 .noc {
   text-decoration: none;
